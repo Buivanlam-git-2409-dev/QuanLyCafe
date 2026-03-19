@@ -1,0 +1,52 @@
+@model MyCafe.Web.Models.HoaDonNhap
+
+@{
+    ViewData["Title"] = "Xóa Phiếu Nhập Hàng";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card border-danger shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0"><i class="bi bi-trash"></i> @ViewData["Title"]</h3>
+                </div>
+                <div class="card-body text-center p-4">
+                    <h4 class="text-danger mb-4">Xác nhận XÓA phiếu nhập này?</h4>
+                    <p class="mb-4 text-muted">Cảnh báo: Số lượng hàng trong kho sẽ bị TRỪ tương ứng với số lượng trong phiếu nhập này.</p>
+                    
+                    <div class="bg-light p-4 rounded mb-4 border text-start">
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Số HĐ Nhập:</div>
+                            <div class="col-sm-8 font-monospace">@Model.MaHDN</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Ngày Nhập:</div>
+                            <div class="col-sm-8">@(Model.NgayNhap?.ToString("dd/MM/yyyy") ?? "N/A")</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Nhà Cung Cấp:</div>
+                            <div class="col-sm-8">@Model.NCC?.TenNCC</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Tổng Tiền:</div>
+                            <div class="col-sm-8 text-primary fw-bold">@(Model.TongTien?.ToString("N0") ?? "0") VNĐ</div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle-fill"></i> Hành động này không thể hoàn tác và sẽ ảnh hưởng trực tiếp đến tồn kho hiện tại.
+                    </div>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaHDN" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">Hủy Bỏ</a>
+                            <button type="submit" class="btn btn-danger px-4">Xác Nhận Xóa Phiếu Nhập</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+@model MyCafe.Web.Models.NCC
+
+@{
+    ViewData["Title"] = "Xóa Nhà Cung Cấp";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card border-danger shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0">@ViewData["Title"]</h3>
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="text-danger mb-4">Bạn có chắc chắn muốn xóa nhà cung cấp này không?</h4>
+                    <p class="mb-4 text-muted">Hành động này không thể hoàn tác.</p>
+                    
+                    <div class="bg-light p-4 rounded mb-4">
+                        <div class="row mb-2">
+                            <div class="col-sm-6 text-end fw-bold">Mã NCC:</div>
+                            <div class="col-sm-6 text-start">@Model.MaNCC</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-end fw-bold">Tên NCC:</div>
+                            <div class="col-sm-6 text-start">@Model.TenNCC</div>
+                        </div>
+                    </div>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaNCC" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">Hủy Bỏ</a>
+                            <button type="submit" class="btn btn-danger">Xác Nhận Xóa</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

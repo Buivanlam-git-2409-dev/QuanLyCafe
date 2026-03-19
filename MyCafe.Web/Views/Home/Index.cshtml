@@ -1,0 +1,142 @@
+@{
+    ViewData["Title"] = "Bảng Điều Khiển";
+}
+
+<div class="container-fluid">
+    <div class="row pt-4 pb-4">
+        <div class="col-12">
+            <h1 class="display-5 fw-bold"><i class="bi bi-speedometer2"></i> Hệ Thống Quản Lý Cafe ChiChi</h1>
+            <p class="lead">Chào mừng bạn trở lại! Dưới đây là tóm tắt hoạt động của cửa hàng.</p>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-3">
+            <div class="card bg-primary text-white shadow-sm h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-uppercase mb-1">Sản Phẩm</h6>
+                            <h2 class="mb-0">@ViewBag.ProductCount</h2>
+                        </div>
+                        <i class="bi bi-box-seam fs-1 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a asp-controller="Sanpham" asp-action="Index" class="text-white text-decoration-none small">Xem chi tiết <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white shadow-sm h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-uppercase mb-1">Doanh Thu</h6>
+                            <h2 class="mb-0">@(ViewBag.TotalSales.ToString("N0"))</h2>
+                        </div>
+                        <i class="bi bi-currency-dollar fs-1 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a asp-controller="HoaDonBan" asp-action="Index" class="text-white text-decoration-none small">Lịch sử bán hàng <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-dark shadow-sm h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-uppercase mb-1">Nhân Viên</h6>
+                            <h2 class="mb-0">@ViewBag.StaffCount</h2>
+                        </div>
+                        <i class="bi bi-people fs-1 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a asp-controller="NhanVien" asp-action="Index" class="text-dark text-decoration-none small">Quản lý đội ngũ <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-info text-white shadow-sm h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-uppercase mb-1">Đơn Hàng</h6>
+                            <h2 class="mb-0">@ViewBag.InvoiceCount</h2>
+                        </div>
+                        <i class="bi bi-receipt fs-1 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a asp-controller="HoaDonBan" asp-action="Index" class="text-white text-decoration-none small">Xem tất cả đơn <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Access Actions -->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0 fw-bold">Thao Tác Nhanh</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-3">
+                            <a asp-controller="HoaDonBan" asp-action="Create" class="btn btn-outline-success w-100 py-3">
+                                <i class="bi bi-cart-plus fs-3 d-block mb-2"></i>
+                                Bán Hàng
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a asp-controller="HoaDonNhap" asp-action="Create" class="btn btn-outline-primary w-100 py-3">
+                                <i class="bi bi-bag-plus fs-3 d-block mb-2"></i>
+                                Nhập Hàng
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a asp-controller="Sanpham" asp-action="Create" class="btn btn-outline-warning w-100 py-3">
+                                <i class="bi bi-plus-square fs-3 d-block mb-2"></i>
+                                Thêm Món
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <a asp-controller="KhachHang" asp-action="Create" class="btn btn-outline-info w-100 py-3">
+                                <i class="bi bi-person-plus fs-3 d-block mb-2"></i>
+                                Thêm KH
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0 fw-bold">Thông Báo Hệ Thống</h5>
+                </div>
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-info-circle text-info me-3"></i>
+                            Hệ thống đã sẵn sàng cho ngày làm việc mới.
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-check-circle text-success me-3"></i>
+                            Đã sao lưu dữ liệu lúc 00:00 sáng nay.
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <i class="bi bi-exclamation-triangle text-warning me-3"></i>
+                            Kiểm tra tồn kho: 2 mặt hàng sắp hết.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

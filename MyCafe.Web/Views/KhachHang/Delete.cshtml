@@ -1,0 +1,40 @@
+@model MyCafe.Web.Models.KhachHang
+
+@{
+    ViewData["Title"] = "Xóa Khách Hàng";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card border-danger shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0"><i class="bi bi-person-x-fill"></i> @ViewData["Title"]</h3>
+                </div>
+                <div class="card-body text-center p-4">
+                    <h4 class="text-danger mb-4">Bạn có chắc chắn muốn xóa khách hàng này không?</h4>
+                    <p class="mb-4 text-muted">Hành động này không thể hoàn tác và có thể ảnh hưởng đến các hóa đơn liên quan.</p>
+                    
+                    <div class="bg-light p-4 rounded mb-4 border shadow-sm">
+                        <div class="row mb-2">
+                            <div class="col-sm-6 text-end fw-bold">Mã Khách Hàng:</div>
+                            <div class="col-sm-6 text-start">@Model.MaKH</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-end fw-bold">Họ Tên:</div>
+                            <div class="col-sm-6 text-start">@Model.TenKH</div>
+                        </div>
+                    </div>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaKH" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2"><i class="bi bi-x-circle"></i> Hủy Bỏ</a>
+                            <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i> Xác Nhận Xóa</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

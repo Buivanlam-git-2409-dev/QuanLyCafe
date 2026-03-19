@@ -1,0 +1,44 @@
+@model MyCafe.Web.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Xóa Nhân Viên";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card border-danger shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0"><i class="bi bi-person-x-fill"></i> @ViewData["Title"]</h3>
+                </div>
+                <div class="card-body text-center p-4">
+                    <h4 class="text-danger mb-4">Xác nhận xóa nhân viên khỏi hệ thống?</h4>
+                    
+                    <div class="bg-light p-4 rounded mb-4 border text-start">
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Mã NV:</div>
+                            <div class="col-sm-8">@Model.MaNV</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 fw-bold text-end">Họ Tên:</div>
+                            <div class="col-sm-8">@Model.TenNV</div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-warning text-start">
+                        <i class="bi bi-exclamation-triangle-fill"></i> 
+                        <strong>Lưu ý:</strong> Việc xóa nhân viên sẽ không thể hoàn tác nếu họ đã tham gia vào các giao dịch hóa đơn.
+                    </div>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaNV" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">Hủy Bỏ</a>
+                            <button type="submit" class="btn btn-danger px-4">Xác Nhận Xóa</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

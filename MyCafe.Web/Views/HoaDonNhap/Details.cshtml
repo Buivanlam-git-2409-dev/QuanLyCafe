@@ -1,0 +1,73 @@
+@model MyCafe.Web.Models.HoaDonNhap
+
+@{
+    ViewData["Title"] = "Chi Tiết Phiếu Nhập Hàng";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-primary">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h3 class="mb-0"><i class="bi bi-file-earmark-text"></i> @ViewData["Title"] - @Model.MaHDN</h3>
+            <button class="btn btn-light btn-sm" onclick="window.print()"><i class="bi bi-printer"></i> In Phiếu Nhập</button>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-sm-6">
+                    <h5 class="fw-bold border-bottom pb-2">Thông Tin Nhập Kho</h5>
+                    <p><strong>Ngày Nhập:</strong> @(Model.NgayNhap?.ToString("dd/MM/yyyy") ?? "N/A")</p>
+                    <p><strong>Nhân Viên Nhập:</strong> @Model.NhanVien?.TenNV (@Model.MaNV)</p>
+                    <p><strong>Nhà Cung Cấp:</strong> @Model.NCC?.TenNCC (@Model.MaNCC)</p>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <h5 class="fw-bold border-bottom pb-2">Giá Trị Lô Hàng</h5>
+                    <p class="display-6 text-primary fw-bold">@(Model.TongTien?.ToString("N0") ?? "0") VNĐ</p>
+                </div>
+            </div>
+
+            <h5 class="fw-bold border-bottom pb-2 mb-3">Danh Sách Sản Phẩm Nhập</h5>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>STT</th>
+                            <th>Mã SP</th>
+                            <th>Tên Sản Phẩm</th>
+                            <th class="text-center">Số Lượng</th>
+                            <th class="text-end">Đơn Giá Nhập</th>
+                            <th class="text-end">Khuyến Mãi</th>
+                            <th class="text-end">Thành Tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ int i = 1; }
+                        @foreach (var detail in Model.ChiTietHoaDonNhaps)
+                        {
+                            <tr>
+                                <td>@(i++)</td>
+                                <td>@detail.MaSP</td>
+                                <td>@detail.Sanpham?.TenSP</td>
+                                <td class="text-center">@detail.SoLuong</td>
+                                <td class="text-end">@(detail.DonGia?.ToString("N0") ?? "0")</td>
+                                <td class="text-end">@(detail.KhuyenMai?.ToString("N0") ?? "0")</td>
+                                <td class="text-end fw-bold">@(detail.ThanhTien?.ToString("N0") ?? "0") VNĐ</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4 no-print">
+                <a asp-action="Index" class="btn btn-secondary me-md-2">Quay Lại</a>
+                <a asp-action="Edit" asp-route-id="@Model.MaHDN" class="btn btn-warning">Sửa Phiếu Nhập</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    @@media print {
+        .no-print { display: none !important; }
+        .card { border: none !important; shadow: none !important; }
+        .card-header { background-color: white !important; color: black !important; border-bottom: 2px solid black !important; }
+    }
+</style>

@@ -1,0 +1,56 @@
+@model MyCafe.Web.Models.Sanpham
+
+@{
+    ViewData["Title"] = "Xóa Sản Phẩm";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-danger">@ViewData["Title"]</h1>
+            <hr />
+
+            <div class="alert alert-warning" role="alert">
+                <i class="bi bi-exclamation-triangle"></i> 
+                <strong>Cảnh báo:</strong> Hành động này không thể hoàn tác. Sản phẩm sẽ bị xóa vĩnh viễn.
+            </div>
+
+            <div class="card border-danger">
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">Mã Sản Phẩm</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.MaSP)</dd>
+
+                        <dt class="col-sm-3">Tên Sản Phẩm</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.TenSP)</dd>
+
+                        <dt class="col-sm-3">Loại</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Loai.TenLoai)</dd>
+
+                        <dt class="col-sm-3">Công Dụng</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.CongDung.TenCongDung)</dd>
+
+                        <dt class="col-sm-3">Giá Nhập</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.GiaNhap) VNĐ</dd>
+
+                        <dt class="col-sm-3">Giá Bán</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.GiaBan) VNĐ</dd>
+
+                        <dt class="col-sm-3">Số Lượng</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.SoLuong)</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <form asp-action="Delete" method="post" class="mt-4">
+                <input type="hidden" asp-for="MaSP" />
+                <button type="submit" class="btn btn-danger me-2">
+                    <i class="bi bi-trash"></i> Xác Nhận Xóa
+                </button>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Hủy
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

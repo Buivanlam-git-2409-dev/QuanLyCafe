@@ -1,0 +1,62 @@
+@model IEnumerable<MyCafe.Web.Models.HoaDonNhap>
+
+@{
+    ViewData["Title"] = "Quản Lý Hóa Đơn Nhập";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <h1><i class="bi bi-box-seam"></i> @ViewData["Title"]</h1>
+        </div>
+        <div class="col-md-4 text-end">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Nhập Hàng Mới
+            </a>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Số HĐ Nhập</th>
+                            <th>Ngày Nhập</th>
+                            <th>Nhân Viên</th>
+                            <th>Nhà Cung Cấp</th>
+                            <th class="text-end">Tổng Tiền</th>
+                            <th class="text-center">Hành Động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td><strong>@item.MaHDN</strong></td>
+                                <td>@(item.NgayNhap?.ToString("dd/MM/yyyy") ?? "N/A")</td>
+                                <td>@item.NhanVien?.TenNV</td>
+                                <td>@item.NCC?.TenNCC</td>
+                                <td class="text-end fw-bold text-primary">@(item.TongTien?.ToString("N0") ?? "0") VNĐ</td>
+                                <td class="text-center">
+                                    <div class="btn-group">
+                                        <a asp-action="Details" asp-route-id="@item.MaHDN" class="btn btn-sm btn-info" title="Chi Tiết">
+                                            <i class="bi bi-eye"></i>
+                                        </a>
+                                        <a asp-action="Edit" asp-route-id="@item.MaHDN" class="btn btn-sm btn-warning" title="Sửa/Nhập Thêm">
+                                            <i class="bi bi-pencil"></i>
+                                        </a>
+                                        <a asp-action="Delete" asp-route-id="@item.MaHDN" class="btn btn-sm btn-danger" title="Xóa">
+                                            <i class="bi bi-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

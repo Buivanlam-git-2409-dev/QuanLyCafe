@@ -1,0 +1,63 @@
+@model MyCafe.Web.Models.HoaDonNhap
+
+@{
+    ViewData["Title"] = "Lập Hóa Đơn Nhập Hàng";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0"><i class="bi bi-file-earmark-arrow-down"></i> @ViewData["Title"]</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="MaHDN" class="form-label fw-bold">Số Hóa Đơn Nhập</label>
+                            <input asp-for="MaHDN" class="form-control" placeholder="HDN001..." />
+                            <span asp-validation-for="MaHDN" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NgayNhap" class="form-label fw-bold">Ngày Nhập Hàng</label>
+                            <input asp-for="NgayNhap" type="date" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                            <span asp-validation-for="NgayNhap" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="MaNV" class="form-label fw-bold">Nhân Viên Nhập</label>
+                            <select asp-for="MaNV" class="form-select" asp-items="ViewBag.MaNV">
+                                <option value="">-- Chọn Nhân Viên --</option>
+                            </select>
+                            <span asp-validation-for="MaNV" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="MaNCC" class="form-label fw-bold">Nhà Cung Cấp</label>
+                            <select asp-for="MaNCC" class="form-select" asp-items="ViewBag.MaNCC">
+                                <option value="">-- Chọn Nhà Cung Cấp --</option>
+                            </select>
+                            <span asp-validation-for="MaNCC" class="text-danger"></span>
+                        </div>
+
+                        <div class="alert alert-warning py-2 small">
+                            <i class="bi bi-exclamation-triangle"></i> Dữ liệu tồn kho sẽ được cập nhật ngay khi bạn thêm chi tiết sản phẩm ở bước tiếp theo.
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">Hủy Bỏ</a>
+                            <button type="submit" class="btn btn-primary px-4">Tiếp Tục Nhập Hàng <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

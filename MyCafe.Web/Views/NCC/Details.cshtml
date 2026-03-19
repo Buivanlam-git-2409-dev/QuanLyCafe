@@ -1,0 +1,43 @@
+@model MyCafe.Web.Models.NCC
+
+@{
+    ViewData["Title"] = "Chi Tiết Nhà Cung Cấp";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h3 class="mb-0">@ViewData["Title"]</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Mã NCC:</div>
+                        <div class="col-sm-8 text-primary fw-bold">@Model.MaNCC</div>
+                    </div>
+                    <hr />
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Tên Nhà Cung Cấp:</div>
+                        <div class="col-sm-8">@Model.TenNCC</div>
+                    </div>
+                    <hr />
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Địa Chỉ:</div>
+                        <div class="col-sm-8">@Model.DiaChi</div>
+                    </div>
+                    <hr />
+                    <div class="row mb-3">
+                        <div class="col-sm-4 fw-bold">Số Điện Thoại:</div>
+                        <div class="col-sm-8">@Model.SDT</div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Index" class="btn btn-secondary">Quay Lại</a>
+                        <a asp-action="Edit" asp-route-id="@Model.MaNCC" class="btn btn-warning">Chỉnh Sửa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

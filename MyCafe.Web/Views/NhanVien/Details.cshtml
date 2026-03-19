@@ -1,0 +1,58 @@
+@model MyCafe.Web.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Chi Tiết Nhân Viên";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow border-info">
+                <div class="card-header bg-info text-white">
+                    <h3 class="mb-0"><i class="bi bi-person-badge"></i> @ViewData["Title"]</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Mã Nhân Viên:</div>
+                        <div class="col-sm-8 text-primary font-monospace fw-bold">@Model.MaNV</div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Họ Và Tên:</div>
+                        <div class="col-sm-8">@Model.TenNV</div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Giới Tính:</div>
+                        <div class="col-sm-8">@Model.GioiTinh</div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Ngày Sinh:</div>
+                        <div class="col-sm-8">@Model.NgaySinh.ToString("dd/MM/yyyy")</div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Số Điện Thoại:</div>
+                        <div class="col-sm-8">@Model.SDT</div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Địa Chỉ:</div>
+                        <div class="col-sm-8">@Model.DiaChi</div>
+                    </div>
+                    <hr class="my-1" />
+                    <div class="row py-2">
+                        <div class="col-sm-4 fw-bold">Quê Quán:</div>
+                        <div class="col-sm-8">@Model.Que.TenQue</div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Index" class="btn btn-secondary me-md-2">Danh Sách</a>
+                        <a asp-action="Edit" asp-route-id="@Model.MaNV" class="btn btn-warning">Chỉnh Sửa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

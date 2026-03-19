@@ -1,0 +1,42 @@
+@model MyCafe.Web.Models.Que
+
+@{
+    ViewData["Title"] = "Xóa Quê Quán";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-danger">@ViewData["Title"]</h1>
+            <h3>Bạn có chắc chắn muốn xóa quê quán này?</h3>
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-4">
+                    Mã Quê
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.MaQue)
+                </dd>
+                <dt class="col-sm-4">
+                    Tên Quê
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.TenQue)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="MaQue" />
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-danger me-2">
+                        <i class="bi bi-trash"></i> Xác Nhận Xóa
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Quay Lại
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

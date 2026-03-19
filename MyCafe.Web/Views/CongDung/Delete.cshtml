@@ -1,0 +1,42 @@
+@model MyCafe.Web.Models.CongDung
+
+@{
+    ViewData["Title"] = "Xóa Công Dụng";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1 class="text-danger">@ViewData["Title"]</h1>
+            <h3>Bạn có chắc chắn muốn xóa công dụng này?</h3>
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-4">
+                    Mã Công Dụng
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.MaCongDung)
+                </dd>
+                <dt class="col-sm-4">
+                    Tên Công Dụng
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.TenCongDung)
+                </dd>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="MaCongDung" />
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-danger me-2">
+                        <i class="bi bi-trash"></i> Xác Nhận Xóa
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Quay Lại
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

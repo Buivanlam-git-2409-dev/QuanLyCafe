@@ -1,0 +1,235 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyCafe.Web
+build_property.RootNamespace = MyCafe.Web
+build_property.ProjectDir = C:\Users\fptsh\Downloads\BackEnd\NET\MyCafeWeb\MyCafe.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\fptsh\Downloads\BackEnd\NET\MyCafeWeb\MyCafe.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/CongDung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZ0R1bmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/CongDung/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZ0R1bmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/CongDung/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZ0R1bmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/CongDung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZ0R1bmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/CongDung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29uZ0R1bmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonBan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonBan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonBan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonBan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonBan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uQmFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonNhap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonNhap/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonNhap/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonNhap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/HoaDonNhap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uTmhhcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/KhachHang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/KhachHang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/KhachHang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/KhachHang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/KhachHang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hIYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Loai/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Loai/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Loai/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Loai/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Loai/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9haVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NCC/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkNDXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NCC/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkNDXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NCC/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkNDXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NCC/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkNDXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NCC/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkNDXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NhanVien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NhanVien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NhanVien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NhanVien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/NhanVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhblZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Que/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Que/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Que/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Que/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Que/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Sanpham/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FucGhhbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Sanpham/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FucGhhbVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Sanpham/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FucGhhbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Sanpham/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FucGhhbVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Sanpham/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FucGhhbVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fptsh/Downloads/BackEnd/NET/MyCafeWeb/MyCafe.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-z94h9w23oi

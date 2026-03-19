@@ -1,0 +1,83 @@
+@model MyCafe.Web.Models.Sanpham
+
+@{
+    ViewData["Title"] = "Chi Tiết Sản Phẩm";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1>@ViewData["Title"]</h1>
+            <hr />
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Mã Sản Phẩm</h5>
+                            <p class="h5">@Html.DisplayFor(model => model.MaSP)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Tên Sản Phẩm</h5>
+                            <p class="h5">@Html.DisplayFor(model => model.TenSP)</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Loại</h5>
+                            <p>@Html.DisplayFor(model => model.Loai.TenLoai)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Công Dụng</h5>
+                            <p>@Html.DisplayFor(model => model.CongDung.TenCongDung)</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <h5 class="text-muted">Giá Nhập</h5>
+                            <p class="h6">@Html.DisplayFor(model => model.GiaNhap) VNĐ</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-muted">Giá Bán</h5>
+                            <p class="h6">@Html.DisplayFor(model => model.GiaBan) VNĐ</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="text-muted">Số Lượng</h5>
+                            <p class="h6">@Html.DisplayFor(model => model.SoLuong)</p>
+                        </div>
+                    </div>
+
+                    @if (Model.HinhAnh != null && Model.HinhAnh.Length > 0)
+                    {
+                        <div class="mb-3">
+                            <h5 class="text-muted">Hình Ảnh</h5>
+                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.HinhAnh)" style="max-height: 300px; border-radius: 5px;" />
+                        </div>
+                    }
+
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h5 class="text-muted">Thông Tin Khác</h5>
+                            <p><small class="text-secondary">Tạo lúc: @Html.DisplayFor(model => model.CreatedAt)</small></p>
+                            <p><small class="text-secondary">Cập nhật lúc: @Html.DisplayFor(model => model.UpdatedAt)</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                <a asp-action="Edit" asp-route-id="@Model.MaSP" class="btn btn-warning">
+                    <i class="bi bi-pencil"></i> Chỉnh Sửa
+                </a>
+                <a asp-action="Delete" asp-route-id="@Model.MaSP" class="btn btn-danger">
+                    <i class="bi bi-trash"></i> Xóa
+                </a>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Quay Lại
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

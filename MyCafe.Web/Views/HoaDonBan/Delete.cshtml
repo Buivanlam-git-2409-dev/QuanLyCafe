@@ -1,0 +1,44 @@
+@model MyCafe.Web.Models.HoaDonBan
+
+@{
+    ViewData["Title"] = "Hủy Hóa Đơn Bán";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card border-danger shadow-sm">
+                <div class="card-header bg-danger text-white">
+                    <h3 class="mb-0"><i class="bi bi-exclamation-octagon"></i> @ViewData["Title"]</h3>
+                </div>
+                <div class="card-body text-center p-4">
+                    <h4 class="text-danger mb-4">Bạn có chắc chắn muốn HỦY hóa đơn này?</h4>
+                    <p class="mb-4 text-muted">Hệ thống sẽ tự động cộng lại số lượng sản phẩm vào kho hàng.</p>
+                    
+                    <div class="bg-light p-4 rounded mb-4 border text-start">
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Số HĐ:</div>
+                            <div class="col-sm-8">@Model.MaHDB</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Ngày Bán:</div>
+                            <div class="col-sm-8">@(Model.NgayBan?.ToString("dd/MM/yyyy HH:mm") ?? "N/A")</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-4 fw-bold text-end">Tổng Tiền:</div>
+                            <div class="col-sm-8 text-danger fw-bold">@(Model.TongTien?.ToString("N0") ?? "0") VNĐ</div>
+                        </div>
+                    </div>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="MaHDB" />
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-center mt-4">
+                            <a asp-action="Index" class="btn btn-secondary me-md-2">Quay Lại</a>
+                            <button type="submit" class="btn btn-danger px-4">Xác Nhận Hủy Hóa Đơn</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

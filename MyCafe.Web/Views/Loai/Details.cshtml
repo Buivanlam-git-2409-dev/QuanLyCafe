@@ -1,24 +1,35 @@
 @model MyCafe.Web.Models.Loai
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi Tiết Loại Sản Phẩm";
 }
 
-<h1>Details</h1>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow-sm border-info">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0"><i class="bi bi-info-circle"></i> @ViewData["Title"]</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Mã Loại:</dt>
+                        <dd class="col-sm-8 text-primary fw-bold">@Html.DisplayFor(model => model.MaLoai)</dd>
 
-<div>
-    <h4>Loai</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TenLoai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TenLoai)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.MaLoai">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+                        <dt class="col-sm-4 fw-bold">Tên Loại:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.TenLoai)</dd>
+                    </dl>
+                    
+                    <div class="mt-4 d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Quay Lại
+                        </a>
+                        <a asp-action="Edit" asp-route-id="@Model?.MaLoai" class="btn btn-warning text-dark">
+                            <i class="bi bi-pencil-square"></i> Chỉnh Sửa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

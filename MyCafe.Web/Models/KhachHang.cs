@@ -14,6 +14,12 @@ namespace MyCafe.Web.Models
         [StringLength(50)]
         public string TenKH { get; set; }
 
+        [StringLength(50)]
+        public string DiaChi { get; set; }
+
+        [StringLength(50)]
+        public string SDT { get; set; }
+
         // Navigation property
         public virtual ICollection<HoaDonBan> HoaDonBans { get; set; } = new List<HoaDonBan>();
     }

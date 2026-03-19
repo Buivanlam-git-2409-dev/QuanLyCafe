@@ -40,8 +40,7 @@
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label asp-for="NgaySinh" class="form-label fw-bold">Ngày Sinh</label>
-                                <input asp-for="NgaySinh" type="date" class="form-control" value="@Model.NgaySinh.ToString("yyyy-MM-dd")" />
-                                <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                                <input asp-for="NgaySinh" type="date" class="form-control" value="@(Model.NgaySinh.HasValue ? Model.NgaySinh.Value.ToString("yyyy-MM-dd") : "")" />                                <span asp-validation-for="NgaySinh" class="text-danger"></span>
                             </div>
                         </div>
 

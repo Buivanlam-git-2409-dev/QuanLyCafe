@@ -29,8 +29,7 @@
                     <hr class="my-1" />
                     <div class="row py-2">
                         <div class="col-sm-4 fw-bold">Ngày Sinh:</div>
-                        <div class="col-sm-8">@Model.NgaySinh.ToString("dd/MM/yyyy")</div>
-                    </div>
+                        <div class="col-sm-8">@(Model.NgaySinh.HasValue ? Model.NgaySinh.Value.ToString("dd/MM/yyyy") : "")</div>                    </div>
                     <hr class="my-1" />
                     <div class="row py-2">
                         <div class="col-sm-4 fw-bold">Số Điện Thoại:</div>

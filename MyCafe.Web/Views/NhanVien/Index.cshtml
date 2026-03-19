@@ -40,7 +40,7 @@
                                     <td><strong>@Html.DisplayFor(modelItem => item.MaNV)</strong></td>
                                     <td>@Html.DisplayFor(modelItem => item.TenNV)</td>
                                     <td>@Html.DisplayFor(modelItem => item.GioiTinh)</td>
-                                    <td>@item.NgaySinh.ToString("dd/MM/yyyy")</td>
+                                    <td>@(item.NgaySinh.HasValue ? item.NgaySinh.Value.ToString("dd/MM/yyyy") : "")</td>
                                     <td>@Html.DisplayFor(modelItem => item.SDT)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Que.TenQue)</td>
                                     <td class="text-center">
